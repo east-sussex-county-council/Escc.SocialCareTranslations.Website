@@ -88,7 +88,7 @@
     <None Include="Web.example.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="translations.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
