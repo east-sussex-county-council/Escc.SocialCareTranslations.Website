@@ -39,13 +39,12 @@ $projectName = "Escc.SocialCareTranslations.Website"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.EastSussexGovUK"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.NavigationControls"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Data.Web"
-DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Data.Xml"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.HouseStyle"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Data.ActiveDirectory"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Cms"
 DownloadProjectIfMissing $parentFolderOfThisScript "Escc.Elibrary"
 NuGetRestoreForProject $parentFolderOfThisScript "Escc.Cms"
-NuGetRestoreForProject $parentFolderOfThisScript "Escc.Data.Xml"
+NuGetRestoreForProject $parentFolderOfThisScript "Escc.EastSussexGovUK"
 
 EnableDotNet40InIIS
 CreateApplicationPool $projectName
