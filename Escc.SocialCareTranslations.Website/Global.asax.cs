@@ -7,6 +7,7 @@ namespace Escc.SocialCareTranslations.Website
     {
         protected void Application_Start()
         {
+            MvcHandler.DisableMvcResponseHeader = true;
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
