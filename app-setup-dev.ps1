@@ -44,7 +44,6 @@ CreateWebsite $projectName "$pathOfThisScript\$projectName"
 CreateHTTPSBinding $projectName "localhost"
 RemoveHTTPBinding $projectName 80
 CreateVirtualDirectory $projectName "Escc.EastSussexGovUK" "$parentFolderOfThisScript\Escc.EastSussexGovUK\Escc.EastSussexGovUK\"
-CreateVirtualDirectory $projectName "masterpages" "$parentFolderOfThisScript\Escc.EastSussexGovUK\Escc.EastSussexGovUK\masterpages" true
 CopyConfig "$pathOfThisScript\$projectName\Web.example.config" "$pathOfThisScript\$projectName\Web.config"
 CopyConfig "$pathOfThisScript\$projectName\Views\Web.example.config" "$pathOfThisScript\$projectName\Views\Web.config"
 
