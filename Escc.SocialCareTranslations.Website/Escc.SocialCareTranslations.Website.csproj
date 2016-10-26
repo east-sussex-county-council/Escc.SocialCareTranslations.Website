@@ -50,6 +50,10 @@
       <HintPath>..\packages\ClientDependency-Mvc5.1.8.0.0\lib\net45\ClientDependency.Core.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EmbeddedResourceVirtualPathProvider, Version=1.0.5918.17881, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.EmbeddedResourceVirtualPathProvider.1.0.0\lib\EmbeddedResourceVirtualPathProvider.dll</HintPath>
       <Private>True</Private>
@@ -63,7 +67,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Escc.ClientDependencyFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.ClientDependencyFramework.1.0.7\lib\Escc.ClientDependencyFramework.dll</HintPath>
+      <HintPath>..\packages\Escc.ClientDependencyFramework.1.0.8\lib\Escc.ClientDependencyFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -71,7 +75,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Escc.EastSussexGovUK.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.1.1.1\lib\Escc.EastSussexGovUK.Mvc.dll</HintPath>
+      <HintPath>..\packages\Escc.EastSussexGovUK.Mvc.2.0.0\lib\Escc.EastSussexGovUK.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Escc.Html, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
@@ -80,6 +84,10 @@
     </Reference>
     <Reference Include="Escc.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">
       <HintPath>..\packages\Escc.Net.1.0.1\lib\Escc.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Escc.Redirects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Escc.Redirects.1.1.0\lib\Escc.Redirects.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Escc.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06fad7304560ae6f, processorArchitecture=MSIL">

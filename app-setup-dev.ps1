@@ -36,14 +36,11 @@ Example: C:\>set GIT_ORIGIN_URL=https://example-git-server.com/{0}"
 
 $projectName = "Escc.SocialCareTranslations.Website"
 
-DownloadProjectIfMissing $parentFolderOfThisScript "Escc.EastSussexGovUK"
-
 EnableDotNet40InIIS
 CreateApplicationPool $projectName
 CreateWebsite $projectName "$pathOfThisScript\$projectName"
 CreateHTTPSBinding $projectName "localhost"
 RemoveHTTPBinding $projectName 80
-CreateVirtualDirectory $projectName "Escc.EastSussexGovUK" "$parentFolderOfThisScript\Escc.EastSussexGovUK\Escc.EastSussexGovUK\"
 CopyConfig "$pathOfThisScript\$projectName\Web.example.config" "$pathOfThisScript\$projectName\Web.config"
 CopyConfig "$pathOfThisScript\$projectName\Views\Web.example.config" "$pathOfThisScript\$projectName\Views\Web.config"
 
