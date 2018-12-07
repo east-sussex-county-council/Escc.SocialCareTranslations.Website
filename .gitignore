@@ -30,6 +30,7 @@ _ReSharper*/
 *.config
 !*.example.config
 !packages.config
+!*/Views/web.config
 *.scc
 [Ss]cripts*/*.js
 Properties/PublishProfiles/*
