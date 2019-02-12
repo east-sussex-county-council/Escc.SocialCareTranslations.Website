@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Escc.EastSussexGovUK.Mvc;
+using Exceptionless;
 
 namespace Escc.SocialCareTranslations.Website
 {
     public class HomeController : Controller
     {
         // GET: Default
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
             var model = new HomeViewModel();
             model.Metadata.Title = "Translation service";
@@ -21,6 +23,26 @@ namespace Escc.SocialCareTranslations.Website
             model.Metadata.IpsvPreferredTerms = "Health, well-being and care; Languages";
             model.Metadata.LgslNumbers = "169";
             model.ShowEastSussex1SpaceWidget = true;
+
+            var templateRequest = new EastSussexGovUKTemplateRequest(Request);
+            try
+            {
+                model.WebChat = await templateRequest.RequestWebChatSettingsAsync();
+            }
+            catch (Exception ex)
+            {
+                // Catch and report exceptions - don't throw them and cause the page to fail
+                ex.ToExceptionless().Submit();
+            }
+            try
+            {
+                model.TemplateHtml = await templateRequest.RequestTemplateHtmlAsync();
+            }
+            catch (Exception ex)
+            {
+                // Catch and report exceptions - don't throw them and cause the page to fail
+                ex.ToExceptionless().Submit();
+            }
 
             return View(model);
         }
